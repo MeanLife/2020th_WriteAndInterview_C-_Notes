@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{A10237B7-B1DA-4F84-B832-C702E4B5C924}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>My2020届笔试面试C刷题笔记</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="0-1背包扩展：背包必须装满.cpp" />
+    <ClCompile Include="0-1背包问题（经典）.cpp" />
+    <ClCompile Include="1元一瓶水，两个瓶子兑换一瓶水，问总共能喝几瓶水.cpp" />
+    <ClCompile Include="3.strcpy：用于字符串复制（复制包含0）.cpp" />
+    <ClCompile Include="4.strstr：寻找母串中是否存在某个子串.cpp" />
+    <ClCompile Include="5.itoa：整数转字符串.cpp" />
+    <ClCompile Include="6.atoi：字符串转整数（遇到非数字字符结束）.cpp" />
+    <ClCompile Include="7.memcpy：拷贝某段内存.cpp" />
+    <ClCompile Include="8.memset：对指定内存每个字节赋某个值.cpp" />
+    <ClCompile Include="algorithm.cpp" />
+    <ClCompile Include="algorithm2.cpp" />
+    <ClCompile Include="algorithm3.cpp" />
+    <ClCompile Include="deque.cpp" />
+    <ClCompile Include="forward_list.cpp" />
+    <ClCompile Include="list.cpp" />
+    <ClCompile Include="map.cpp" />
+    <ClCompile Include="N个数，判断是否有重复的值.cpp" />
+    <ClCompile Include="set.cpp" />
+    <ClCompile Include="stack_and_queue.cpp" />
+    <ClCompile Include="string.cpp" />
+    <ClCompile Include="不同进制的输入与输出方法（与十进制之间的转换）.cpp" />
+    <ClCompile Include="二分查找算法.cpp" />
+    <ClCompile Include="任务列表.cpp" />
+    <ClCompile Include="偶串（子串的偶串个数）.cpp" />
+    <ClCompile Include="大端、小端判断.cpp" />
+    <ClCompile Include="字符串匹配的KMP算法.cpp" />
+    <ClCompile Include="字符串大小写转换.cpp" />
+    <ClCompile Include="密码锁（矩阵是否沿中心对称）.cpp" />
+    <ClCompile Include="工资分配.cpp" />
+    <ClCompile Include="数学期望.cpp" />
+    <ClCompile Include="小明跑步（弧长与角度公式）.cpp" />
+    <ClCompile Include="找老乡（并查集）.cpp" />
+    <ClCompile Include="叠加箱子（我写的）.cpp" />
+    <ClCompile Include="万万没想到之抓捕孔连顺（组合）.cpp" />
+    <ClCompile Include="两个超长的整数字符串相加.cpp" />
+    <ClCompile Include="叠加箱子（唐莉写的）.cpp" />
+    <ClCompile Include="二叉树的序列化与反序列化.cpp" />
+    <ClCompile Include="加密通信问题（异或）.cpp" />
+    <ClCompile Include="发工资问题（广度优先搜索）.cpp" />
+    <ClCompile Include="vector.cpp" />
+    <ClCompile Include="一个特殊栈，有栈的基本功能，且可以返回栈中的最小元素.cpp" />
+    <ClCompile Include="两个单链表相交的一系列问题.cpp" />
+    <ClCompile Include="两个栈实现队列.cpp" />
+    <ClCompile Include="主函数_排序算法调用.cpp" />
+    <ClCompile Include="二叉树的遍历.cpp" />
+    <ClCompile Include="从尾到头打印链表（链表反转）.cpp" />
+    <ClCompile Include="冒泡法排序.cpp" />
+    <ClCompile Include="判断一个链表是否为回文结构.cpp" />
+    <ClCompile Include="单向和双向链表反转.cpp" />
+    <ClCompile Include="在二叉树中找到一个节点的后继节点.cpp" />
+    <ClCompile Include="基数排序.cpp" />
+    <ClCompile Include="堆排序_大根堆_下标从0开始.cpp" />
+    <ClCompile Include="堆排序_大根堆_下标从1开始.cpp" />
+    <ClCompile Include="堆排序_小根堆_下标从0开始.cpp" />
+    <ClCompile Include="复制含有随机指针节点的链表.cpp" />
+    <ClCompile Include="字符串去重（两两、三三重复）.cpp" />
+    <ClCompile Include="将单链表按某值划分成左边小，中间相等，右边大的形式.cpp" />
+    <ClCompile Include="小和问题（所有左边数比右边数小的左边数之和）.cpp" />
+    <ClCompile Include="希尔排序算法.cpp" />
+    <ClCompile Include="常用排序算法复习测试.cpp" />
+    <ClCompile Include="归并算法排序.cpp" />
+    <ClCompile Include="快速排序算法.cpp" />
+    <ClCompile Include="打印两个有序链表的公共部分.cpp" />
+    <ClCompile Include="找出字符串中第一个不重复的字符.cpp" />
+    <ClCompile Include="任务调度问题（拼多多一道题）.cpp" />
+    <ClCompile Include="排列组合问题.cpp" />
+    <ClCompile Include="插入法排序.cpp" />
+    <ClCompile Include="数组创建一颗完全二叉树.cpp" />
+    <ClCompile Include="数组排序后，相邻两数的最大差值.cpp" />
+    <ClCompile Include="整数取偶数位上的数.cpp" />
+    <ClCompile Include="斐波那契数列.cpp" />
+    <ClCompile Include="旋转数组的最小数字.cpp" />
+    <ClCompile Include="替换空格（字符串查找和替换）.cpp" />
+    <ClCompile Include="二维数组中的查找（有序的二维数组）.cpp" />
+    <ClCompile Include="栈_实现_队列.cpp" />
+    <ClCompile Include="栈（固定大小数组实现）.cpp" />
+    <ClCompile Include="桶排序（计数排序）.cpp" />
+    <ClCompile Include="人民币组合问题.cpp" />
+    <ClCompile Include="字符串最大映射.cpp" />
+    <ClCompile Include="小明上学闹钟问题.cpp" />
+    <ClCompile Include="字符、字符串、int、int数组相互转换.cpp" />
+    <ClCompile Include="字符串中查找子串.cpp" />
+    <ClCompile Include="源.cpp" />
+    <ClCompile Include="排序（只能是0位置与某个位置交换）.cpp" />
+    <ClCompile Include="删除字符串中出现次数最少的字符.cpp" />
+    <ClCompile Include="源1-1.cpp" />
+    <ClCompile Include="源1-2.cpp" />
+    <ClCompile Include="找质数__第二题.cpp" />
+    <ClCompile Include="1.strlen：计算字符串长度.cpp" />
+    <ClCompile Include="LeetCode520_检测大写字母.cpp" />
+    <ClCompile Include="Base64加密.cpp" />
+    <ClCompile Include="源1.cpp" />
+    <ClCompile Include="源2-1.cpp" />
+    <ClCompile Include="源2-2.cpp" />
+    <ClCompile Include="2.strcmp：比较字符串大小.cpp" />
+    <ClCompile Include="源2.cpp" />
+    <ClCompile Include="源3-1.cpp" />
+    <ClCompile Include="源3-2.cpp" />
+    <ClCompile Include="源3.cpp" />
+    <ClCompile Include="源4.cpp" />
+    <ClCompile Include="源5.cpp" />
+    <ClCompile Include="用两个栈实现队列.cpp" />
+    <ClCompile Include="笔试题__Zoom.cpp" />
+    <ClCompile Include="报文转义__第一题.cpp" />
+    <ClCompile Include="裂变反应堆（背包问题升级法）.cpp" />
+    <ClCompile Include="通讯软件__第三题（并查集）.cpp" />
+    <ClCompile Include="源6.cpp" />
+    <ClCompile Include="源7.cpp" />
+    <ClCompile Include="裂变反应堆（组合的应用法）.cpp" />
+    <ClCompile Include="猫狗队列问题.cpp" />
+    <ClCompile Include="荷兰国国旗问题（快排的partition过程）.cpp" />
+    <ClCompile Include="谓词的写法.cpp" />
+    <ClCompile Include="逆序对问题（左边数比右边数大，则这两个数构成一个逆序对）.cpp" />
+    <ClCompile Include="选择法排序.cpp" />
+    <ClCompile Include="重建二叉树（前序+中序的值）.cpp" />
+    <ClCompile Include="重建二叉树（序列化与反序列化）.cpp" />
+    <ClCompile Include="链表的成对反转.cpp" />
+    <ClCompile Include="键入个数_一维数组.cpp" />
+    <ClCompile Include="键入个数_二维数组.cpp" />
+    <ClCompile Include="队列_实现_栈.cpp" />
+    <ClCompile Include="队列（固定大小数组实现）.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="冒泡法排序.h" />
+    <ClInclude Include="希尔排序算法.h" />
+    <ClInclude Include="归并算法排序.h" />
+    <ClInclude Include="快速排序算法.h" />
+    <ClInclude Include="插入法排序.h" />
+    <ClInclude Include="选择法排序.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
