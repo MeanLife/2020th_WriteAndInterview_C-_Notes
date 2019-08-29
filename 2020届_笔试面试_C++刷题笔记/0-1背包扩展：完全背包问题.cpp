@@ -26,47 +26,42 @@ static void print_2D_Array(vector<vector<int>> array)
 
 /***************************************
 n件物品，每件物品重weight，价值value；背包最大容量是c.
-背包必须装满，容量为多大，装多重的物品
+物品件数有无穷多，初始化时从右向左初始化即可。加入变量times表示放了几件当前物品。
+【注意】
+因为每件物品有无穷多件，所以可能会有多种不同的选择，这里只求出一种选择和全部选择的最大的值。可以根据最大的值来求出其他选择。
 ***************************************/
-static vector<bool> knasSack_full(int n, int c, vector<int> &weight, vector<int> &value)
+static vector<int> knasSack_nTimes(int n, int c, vector<int> &weight, vector<int> &value)
 {
 	// 最大价值表，n+1行（第i行代表第i件物品），每一行是一个一维数组vector<int>(c + 1, 0)，即，c+1列（第i列代表背包重量为i）
-	// 在初始化时不能初始化为0，而要初始化为错误状态。在赋值时也加入对错误状态的判断。
-	vector<vector <int>> maxValue_table(n + 1, vector<int>(c + 1, -1)); // 与经典情况有差别，-1表示不能使背包装满
-	print_2D_Array(maxValue_table);
+	vector<vector <int>> maxValue_table(n + 1, vector<int>(c + 1, 0));
 	// 记录物品选或不选，下标从0开始。
-	vector<bool> result(n, false);
+	vector<int> result(n, false);
+	// 加入变量times表示放了几件当前物品。
+	int times = 0;
 	// 创建动态规划表。
-	for (int i = 1; i < n + 1; i++) // 第0行不使用，没有0号物品
+	for (int i = 1; i <= n; i++) // 第0行不使用，没有0号物品
 	{
-		for (int j = 1; j < c + 1; j++) // 第0行背包容量为0（初始化为0即可）
+		for (int j = 1; j <= c; j++) // 第0行背包容量为0（初始化为0即可）
 		{
-			if (i == 1) // 第1行（第1件物品，下标为0），只有一件物品，能不能装满？weight[i - 1] == j:表示能装满容量j
+			times = j / weight[i - 1]; // j这个容量，能放下几件i这个物品。
+			if (i == 1) // 第1行（第1件物品，下标为0）
 			{
-				maxValue_table[i][j] = (weight[i - 1] == j ? value[i - 1] : -1); // 变成==号，因为只有1件物品，只有在该物品容量处能装满
+				maxValue_table[i][j] = (times > 0 ? value[i - 1] * times : 0);
 			}
 			else
 			{
 				// 上一个网格的值，即，不加第i件物品：前面i-1件物品的最大价值
 				int frontValue = maxValue_table[i - 1][j];
 				// 加第i件物品：当前商品的价值 + 剩余空间的价值
-				int thisValue = -1;
-				if (weight[i - 1] == j)
+				int thisValue = 0;
+				if (times > 0)
 				{
-					thisValue = value[i - 1]; // 确定了要加第i件物品，且刚好只有这么大的容量，所以只有第i件
-				}
-				else if(weight[i - 1] < j) // 装了第i件还会有剩余容量，那么剩余的容量也必须装满
-				{
-					if (maxValue_table[i - 1][j - weight[i - 1]] == -1) 
+					for (int k = 1; k <= times; k++)
 					{
-						thisValue = -1;// 剩余空间的价值等于-1时，表示剩下的空间不能被装满，当前物品不能装。
-					}
-					else // 剩余空间的价值不等于-1时，表示剩下的空间能被装满，当前物品能装
-					{
-						thisValue = value[i - 1] + maxValue_table[i - 1][j - weight[i - 1]];
+						thisValue = value[i - 1] * k + maxValue_table[i - 1][j - weight[i - 1] * k] > thisValue ? value[i - 1] * k + maxValue_table[i - 1][j - weight[i - 1] * k] : thisValue;			
 					}
 				}
-				else // weight[i - 1] > j,当前物品装不进去
+				else
 				{
 					thisValue = frontValue;
 				}
@@ -76,36 +71,38 @@ static vector<bool> knasSack_full(int n, int c, vector<int> &weight, vector<int>
 		}
 	}
 	print_2D_Array(maxValue_table);
-
 	// 动态规划表创建好了，现在根据物品件数和背包容量来选择最大价值的装载。
 	for (int i = n, j = c; i > 0; i--) // 从右下角开始。
-	{
+	{ // 同一列中，如果下面的数比上面的数大，说明当前行选了的。
 		if (maxValue_table[i][j] > maxValue_table[i - 1][j])
 		{
-			result[i - 1] = true;
-			j = j - weight[i - 1];
+			int times = j / weight[i - 1];
+			result[i - 1] = times;
+			//j = j - weight[i - 1];
+			j = j - weight[i - 1] * times;
 		}
 	}
 	return result;
 }
 
 
-int main_背包必须装满(void) // main_背包必须装满
+int main_完全背包问题(void) // main_完全背包问题
 {
 	int n = 5; // 物品件数
 	int c = 10; // 背包最大容量
 	vector<int> weight = { 2,2,6,5,4 };
-	vector<int> value = { 6,3,5,4,6 };
+	vector<int> value = { 6,3,2,4,7 };
 	int sumValue = 0;
-	vector<bool> result = knasSack_full(n, c, weight, value);
+	vector<int> result = knasSack_nTimes(n, c, weight, value);
 	for (int i = 0; i < result.size(); i++)
 	{
-		if (result[i])
+		if (result[i] != 0)
 		{
-			sumValue += value[i];
+			sumValue += value[i] * result[i];
 		}
 		// 物品选择情况，下标，从0开始
-		cout << "第" << i << "件物品：" << (result[i] == true ? "选" : "不选") << endl;
+		cout << "第" << i << "件物品：" << (result[i] != 0 ? "选" : "不选") << result[i] << "件" << endl;
+		//cout << "第" << i << "件物品：" << (result[i] == true ? "选" : "不选") << endl;
 	}
 	cout << sumValue << endl; // 总价值
 

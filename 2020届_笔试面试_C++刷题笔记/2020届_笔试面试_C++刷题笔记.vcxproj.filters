@@ -50,9 +50,6 @@
     <Filter Include="笔试题__京东">
       <UniqueIdentifier>{ad12973c-e922-4dc3-b165-74d5602c7f58}</UniqueIdentifier>
     </Filter>
-    <Filter Include="C语言字符串函数实现">
-      <UniqueIdentifier>{845d57b6-fdd0-4fb2-bd48-84ab2860158b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
@@ -65,6 +62,9 @@
     </Filter>
     <Filter Include="其他__算法题目">
       <UniqueIdentifier>{37b32167-6084-4841-8eb5-197c7419db37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C语言_字符串_常用函数实现">
+      <UniqueIdentifier>{845d57b6-fdd0-4fb2-bd48-84ab2860158b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -345,13 +345,13 @@
       <Filter>其他__算法题目</Filter>
     </ClCompile>
     <ClCompile Include="1.strlen：计算字符串长度.cpp">
-      <Filter>C语言字符串函数实现</Filter>
+      <Filter>C语言_字符串_常用函数实现</Filter>
     </ClCompile>
     <ClCompile Include="2.strcmp：比较字符串大小.cpp">
-      <Filter>C语言字符串函数实现</Filter>
+      <Filter>C语言_字符串_常用函数实现</Filter>
     </ClCompile>
     <ClCompile Include="3.strcpy：用于字符串复制（复制包含0）.cpp">
-      <Filter>C语言字符串函数实现</Filter>
+      <Filter>C语言_字符串_常用函数实现</Filter>
     </ClCompile>
     <ClCompile Include="字符串匹配的KMP算法.cpp">
       <Filter>字符串和数组</Filter>
@@ -378,7 +378,7 @@
       <Filter>字符串和数组</Filter>
     </ClCompile>
     <ClCompile Include="4.strstr：寻找母串中是否存在某个子串.cpp">
-      <Filter>C语言字符串函数实现</Filter>
+      <Filter>C语言_字符串_常用函数实现</Filter>
     </ClCompile>
     <ClCompile Include="源2.cpp">
       <Filter>源</Filter>
@@ -405,16 +405,16 @@
       <Filter>源</Filter>
     </ClCompile>
     <ClCompile Include="5.itoa：整数转字符串.cpp">
-      <Filter>C语言字符串函数实现</Filter>
+      <Filter>C语言_字符串_常用函数实现</Filter>
     </ClCompile>
     <ClCompile Include="6.atoi：字符串转整数（遇到非数字字符结束）.cpp">
-      <Filter>C语言字符串函数实现</Filter>
+      <Filter>C语言_字符串_常用函数实现</Filter>
     </ClCompile>
     <ClCompile Include="7.memcpy：拷贝某段内存.cpp">
-      <Filter>C语言字符串函数实现</Filter>
+      <Filter>C语言_字符串_常用函数实现</Filter>
     </ClCompile>
     <ClCompile Include="8.memset：对指定内存每个字节赋某个值.cpp">
-      <Filter>C语言字符串函数实现</Filter>
+      <Filter>C语言_字符串_常用函数实现</Filter>
     </ClCompile>
     <ClCompile Include="0-1背包问题（经典）.cpp">
       <Filter>其他__算法题目</Filter>
@@ -422,14 +422,26 @@
     <ClCompile Include="0-1背包扩展：背包必须装满.cpp">
       <Filter>其他__算法题目</Filter>
     </ClCompile>
-    <ClCompile Include="裂变反应堆（背包问题升级法）.cpp">
-      <Filter>笔试题__中兴</Filter>
-    </ClCompile>
     <ClCompile Include="裂变反应堆（组合的应用法）.cpp">
       <Filter>笔试题__中兴</Filter>
     </ClCompile>
-    <ClCompile Include="工资分配.cpp">
+    <ClCompile Include="工资排序（统计出现次数）.cpp">
       <Filter>笔试题__中兴</Filter>
+    </ClCompile>
+    <ClCompile Include="0-1背包扩展：多重背包问题.cpp">
+      <Filter>其他__算法题目</Filter>
+    </ClCompile>
+    <ClCompile Include="0-1背包扩展：完全背包问题.cpp">
+      <Filter>其他__算法题目</Filter>
+    </ClCompile>
+    <ClCompile Include="裂变反应堆（背包问题升级_多个限制条件的背包问题）.cpp">
+      <Filter>笔试题__中兴</Filter>
+    </ClCompile>
+    <ClCompile Include="9.strcat：字符串连接.cpp">
+      <Filter>源</Filter>
+    </ClCompile>
+    <ClCompile Include="10.strchr：字符串中找首次出现某个字符的字符串.cpp">
+      <Filter>源</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

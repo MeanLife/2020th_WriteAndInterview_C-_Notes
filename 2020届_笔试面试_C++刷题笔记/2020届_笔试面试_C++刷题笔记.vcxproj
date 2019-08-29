@@ -143,8 +143,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="0-1背包扩展：多重背包问题.cpp" />
+    <ClCompile Include="0-1背包扩展：完全背包问题.cpp" />
     <ClCompile Include="0-1背包扩展：背包必须装满.cpp" />
     <ClCompile Include="0-1背包问题（经典）.cpp" />
+    <ClCompile Include="10.strchr：字符串中找首次出现某个字符的字符串.cpp" />
     <ClCompile Include="1元一瓶水，两个瓶子兑换一瓶水，问总共能喝几瓶水.cpp" />
     <ClCompile Include="3.strcpy：用于字符串复制（复制包含0）.cpp" />
     <ClCompile Include="4.strstr：寻找母串中是否存在某个子串.cpp" />
@@ -152,6 +155,7 @@
     <ClCompile Include="6.atoi：字符串转整数（遇到非数字字符结束）.cpp" />
     <ClCompile Include="7.memcpy：拷贝某段内存.cpp" />
     <ClCompile Include="8.memset：对指定内存每个字节赋某个值.cpp" />
+    <ClCompile Include="9.strcat：字符串连接.cpp" />
     <ClCompile Include="algorithm.cpp" />
     <ClCompile Include="algorithm2.cpp" />
     <ClCompile Include="algorithm3.cpp" />
@@ -171,7 +175,7 @@
     <ClCompile Include="字符串匹配的KMP算法.cpp" />
     <ClCompile Include="字符串大小写转换.cpp" />
     <ClCompile Include="密码锁（矩阵是否沿中心对称）.cpp" />
-    <ClCompile Include="工资分配.cpp" />
+    <ClCompile Include="工资排序（统计出现次数）.cpp" />
     <ClCompile Include="数学期望.cpp" />
     <ClCompile Include="小明跑步（弧长与角度公式）.cpp" />
     <ClCompile Include="找老乡（并查集）.cpp" />
@@ -247,7 +251,7 @@
     <ClCompile Include="用两个栈实现队列.cpp" />
     <ClCompile Include="笔试题__Zoom.cpp" />
     <ClCompile Include="报文转义__第一题.cpp" />
-    <ClCompile Include="裂变反应堆（背包问题升级法）.cpp" />
+    <ClCompile Include="裂变反应堆（背包问题升级_多个限制条件的背包问题）.cpp" />
     <ClCompile Include="通讯软件__第三题（并查集）.cpp" />
     <ClCompile Include="源6.cpp" />
     <ClCompile Include="源7.cpp" />

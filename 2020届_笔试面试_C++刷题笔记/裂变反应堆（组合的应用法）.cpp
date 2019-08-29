@@ -34,11 +34,7 @@ energies=[300,480,270,200,180]
 这种液体组合产生的总体积=50+40+10=100，不大于reactorCap,
 造成反应堆中的总质量=1+2+5=8，不大于criticalMass。
 
-解题思路：这是一个有两个限制条件的0-1背包问题，0-1背包问题可以参考我的另一篇博文：0-1背包问题，
-这里只需将一个限制条件的二维动态规划表变成一个三维动态规划表。
-博客《https://blog.csdn.net/hongtao_6/article/details/97246319》
-
-下面程序思路：
+下面程序思路：《https://www.baidu.com/link?url=oSeZBxJEZSI3ErdkNz8doVkiEtkgZR-EsTbfmhcfIZJn1jpQBWo7RHukerSnLDVNYb4JXxObnwMp3so1oazZ2a&wd=&eqid=92220b07000e3c65000000065d664069》
 有N个瓶子，给所有瓶子编个号（以N=5为例，那么就是1 2 3 4 5），将这5个数，进行组合，即：
 先从5个瓶子中取5个，得到组合：
 1  2  3  4  5
@@ -76,7 +72,7 @@ energies=[300,480,270,200,180]
 3
 4
 5
-每一次得到组合后，遍历所有组合，找到符合条件的最大能量即可。
+每一次得到组合后，遍历所有组合，找到所有组合中符合条件的最大能量即可。
 */
 
 
@@ -138,7 +134,7 @@ static vector<vector<int>> Cnm(vector<int> v, int m)
 	return ret;
 }
 
-int find(int reactorCap, int numberOfRadLiquid, int criticalMass, int volumes[], int masses[], int energies[])
+static int find(int reactorCap, int numberOfRadLiquid, int criticalMass, int volumes[], int masses[], int energies[])
 {
 	int maxEnergies = 0;
 
@@ -179,7 +175,7 @@ int find(int reactorCap, int numberOfRadLiquid, int criticalMass, int volumes[],
 	return maxEnergies;
 }
 
-int main_组合()
+int main_裂变反应堆_组合() // main_裂变反应堆_组合
 {
 	int reactorCap = 100;//容量50 
 	int numberOfRadLiquid = 5;//个数

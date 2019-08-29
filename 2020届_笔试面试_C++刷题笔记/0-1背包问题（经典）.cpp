@@ -56,7 +56,7 @@ static vector<bool> knasSack(int n, int c, vector<int> &weight, vector<int> &val
 
 	// 动态规划表创建好了，现在根据物品件数和背包容量来选择最大价值的装载。
 	for (int i = n, j = c; i > 0; i--) // 从右下角开始。
-	{
+	{ // 同一列中，如果下面的数比上面的数大，说明当前行选了的。
 		if (maxValue_table[i][j] > maxValue_table[i - 1][j])
 		{
 			result[i - 1] = true;
@@ -67,7 +67,7 @@ static vector<bool> knasSack(int n, int c, vector<int> &weight, vector<int> &val
 }
 
 
-int main_背包问题_经典(void)
+int main_背包问题_经典(void) // main_背包问题_经典
 {
 	int n = 5; // 物品件数
 	int c = 10; // 背包最大容量
