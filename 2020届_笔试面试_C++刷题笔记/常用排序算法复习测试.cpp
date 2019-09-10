@@ -5,7 +5,7 @@
 using namespace std;
 
 // 遍历打印
-static void prinft_array(int * array, int len)
+static void prinft_array(vector<int> &array, int len)
 {
 	for (int i = 0; i < len; i++)
 	{
@@ -13,7 +13,7 @@ static void prinft_array(int * array, int len)
 	}
 }
 
-static void swap(int * array, int x, int y)
+static void swap(vector<int> &array, int x, int y)
 {
 	int temp = 0;
 	temp = array[x];
@@ -22,80 +22,56 @@ static void swap(int * array, int x, int y)
 }
 
 // 选择法
-static void Sort(int * array, const int len)
-{
-	for (int i = 0; i < len - 1; i++)
-	{
-		int minindex = i;
-		// 方法一：
-		//for (int j = i + 1; j < len; j++)
-		//{
-		//	if (array[minindex] >= array[j])
-		//	{
-		//		minindex = j;
-		//	}
-		//}
-		//if (minindex != i)
-		//{
-		//	swap(array, minindex, i);
-		//}
-
-		// 方法二：
-		for (int j = i + 1; j < len; ++j)
-		{
-			if (array[minindex] >= array[j])
-			{
-				swap(array, minindex, j);
-			}
-		}
-	}
-}
-
+//static void Sort(vector<int> &array, const int len)
+//{
+//	for (int i = 0; i < len - 1; i++)
+//	{
+//		int minIndex = i;
+//		int j = i + 1;
+//		for ( ; j < len; j++)
+//		{
+//			if (array[minIndex] >= array[j])
+//			{
+//				minIndex = j;
+//			}
+//		}
+//		if (minIndex != i)
+//		{
+//			swap(array, i, minIndex);
+//		}
+//	}
+//
+//}
 
 // 冒泡法
-//static void Sort(int * array, const int len)
+//static void Sort(vector<int> &array, const int len)
 //{
-//	for (int i = 0; i < len - 1; ++i)
+//	for (int i = 0; i < len - 1; i++)
 //	{
-//		int flag = 0;
-//		for (int j = 0; j < len - 1 - i; ++j)
+//		bool flag = true;
+//		for (int j = 0; j < len - i - 1; j++)
 //		{
-//			if (array[j] >= array[j + 1])
+//			if (array[j] > array[j + 1])
 //			{
-//				flag = 1;
+//				flag = false;
 //				swap(array, j, j + 1);
 //			}
 //		}
-//		if (flag == 0)
+//		if (flag == true)
 //		{
 //			return;
 //		}
 //	}
 //}
 
-// 插入法1
-//static void Sort(int * array, const int len)
+// 插入法
+//static void Sort(vector<int> &array, const int len)
 //{
-//	for (int i = 1; i < len; ++i)
-//	{
-//		for (int j = i - 1; j >= 0; --j)
-//		{
-//			if (array[j] > array[j + 1])
-//			{
-//				swap(array, j, j + 1);
-//			}
-//		}
-//	}
-//}
-
-// 插入法2
-//void Sort(int * array, const int len)
-//{
-//	for (int i = 1; i < len; ++i)
+//	for (int i = 1; i < len; i++)
 //	{
 //		int temp = array[i];
 //		int j = i - 1;
-//		for ( ; j >= 0; --j)
+//		for ( ; j >= 0; j--)
 //		{
 //			if (array[j] > temp)
 //			{
@@ -111,17 +87,17 @@ static void Sort(int * array, const int len)
 //}
 
 // 归并法排序
-//static void Merge(int * array, int L, int mid, int R)
+//static void Merge(vector<int> &array, int L, int midPos, int R)
 //{
-//	int *help = new int[R - L + 1];
 //	int p1 = L;
-//	int p2 = mid + 1;
+//	int p2 = midPos + 1;
 //	int i = 0;
-//	while (p1 <= mid && p2 <= R)
+//	vector<int> help(R - L + 1);
+//	while (p1 <= midPos && p2 <= R)
 //	{
-//		help[i++] = array[p1] <= array[p2] ? array[p1++] : array[p2++];
+//		help[i++] = array[p1] < array[p2] ? array[p1++] : array[p2++];
 //	}
-//	while (p1 <= mid)
+//	while (p1 <= midPos)
 //	{
 //		help[i++] = array[p1++];
 //	}
@@ -130,34 +106,34 @@ static void Sort(int * array, const int len)
 //		help[i++] = array[p2++];
 //	}
 //
-//	for (int j = 0; j < i; ++j)
+//	for (int j = 0; j < i; j++)
 //	{
-//		array[L + j] = help[j];
+//		array[j + L] = help[j];
 //	}
-//
-//	delete []help;
-//	help = nullptr;
 //}
-//static void MergeSort(int *array, int L, int R)
+//static void MergeSort(vector<int> &array, int L, int R)
 //{
 //	if (L >= R)
 //	{
 //		return;
 //	}
-//	int mid = L + (R - L) / 2;
-//	MergeSort(array, L, mid);
-//	MergeSort(array, mid + 1, R);
-//	Merge(array, L, mid, R);
+//	int midPos = L + (R - L) / 2;
+//	MergeSort(array, 0, midPos);
+//	MergeSort(array, midPos + 1, R);
+//	Merge(array, 0, midPos, R);
 //}
-//static void Sort(int *array, const int len)
+//static void Sort(vector<int> &array, const int len)
 //{
+//	if (len <= 1)
+//	{
+//		return;
+//	}
 //	MergeSort(array, 0, len - 1);
 //}
 
 // 快速排序
-//int * partition(int *array, int L, int R)
+//static int * partition(vector<int> &array, int L, int R)
 //{
-//	int *help = new int[2];
 //	int lessRange = L - 1;
 //	int bigRange = R + 1;
 //	int key = array[R];
@@ -176,32 +152,30 @@ static void Sort(int * array, const int len)
 //			L++;
 //		}
 //	}
-//	cout << endl;
-//	prinft_array(array, 9);
-//	cout << endl;
+//	int * help = new int[2];
 //	help[0] = lessRange;
 //	help[1] = bigRange;
 //	return help;
 //}
-//void Quicksort(int * array, int L, int R)
+//static void Quicksort(vector<int> &array, int L, int R)
 //{
 //	if (L >= R)
 //	{
 //		return;
 //	}
-//	int * midPoisition = nullptr;
-//	midPoisition = partition(array, L, R);
-//	Quicksort(array, L, midPoisition[0]);
-//	Quicksort(array, midPoisition[1], R);
-//	if (midPoisition != nullptr)
+//	int *help = nullptr;
+//	help = partition(array, L, R);
+//	Quicksort(array, L, help[0]);
+//	Quicksort(array, help[1], R);
+//	if (help != nullptr)
 //	{
-//		delete midPoisition;
-//		midPoisition = nullptr;
+//		delete help;
+//		help = nullptr;
 //	}
 //}
-//void Sort(int * array, const int len)
+//static void Sort(vector<int> &array, const int len)
 //{
-//	if (array == nullptr || len < 2)
+//	if (len <= 1)
 //	{
 //		return;
 //	}
@@ -209,43 +183,41 @@ static void Sort(int * array, const int len)
 //}
 
 // 希尔排序算法
-//void Sort(int * array, const int len)
-//{
-//	if (array == nullptr || len < 2)
-//	{
-//		return;
-//	}
-//
-//	int gap = len;
-//	do 
-//	{
-//		gap = gap / 3 + 1; // gap 最后肯定等于1
-//		for (int i = gap; i < len; i += gap)
-//		{
-//			int temp = array[i];
-//			int j = i - gap;
-//			for ( ; j >= 0; j -= gap)
-//			{
-//				if (array[j] > temp)
-//				{
-//					array[j + gap] = array[j];
-//				}
-//				else
-//				{
-//					break;
-//				}
-//			}
-//			array[j + gap] = temp;
-//		}
-//	} while (gap > 1);
-//}
-
-
-int main_常用排序(void)
+static void Sort(vector<int> &array, const int len)
 {
-	int array[] = { 90, 50, 60, 20, 70, 30, 40, 80, 10 };
-	int rightArray[] = { 10, 20, 30, 40, 50, 60, 70, 80, 90 };
-	int len = sizeof(array) / sizeof(array[0]);
+	if (len <= 1)
+	{
+		return;
+	}
+	int gap = len;
+	do 
+	{
+		gap = gap / 3 + 1;// gap 最后肯定等于1
+		for (int i = gap; i < len; i += gap)
+		{
+			int temp = array[i];
+			int j = i - gap;
+			for ( ; j >= 0; j -= gap)
+			{
+				if (array[j] > temp)
+				{
+					array[j + gap] = array[j];
+				}
+				else
+				{
+					break;
+				}
+			}
+			array[j + gap] = temp;
+		}
+	} while (gap > 1);
+}
+
+int main_常用排序(void) // main_常用排序
+{
+	vector<int> array = { 90, 50, 60, 20, 70, 30, 40, 80, 10 };
+	vector<int> rightArray = { 10, 20, 30, 40, 50, 60, 70, 80, 90 };
+	int len = array.size();
 
 	cout << "排序之前" << endl;
 	prinft_array(array, len);

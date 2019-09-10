@@ -1,48 +1,45 @@
-#include <iostream>
-#include <vector>
-using namespace std;
-
-static void findMaxSubstr(vector<int> &nums, const int len)
-{
-	int maxL = 0;
-	vector<int> temp(len, 0);
-	for (int i = 0; i < len; i++)
-	{
-		int L = 0;
-		int R = maxL;
-		while (L < R)
-		{
-			int mid = L + (R - L) / 2;
-			if (temp[mid] <= nums[i])
-			{
-				L = mid + 1;
-			}
-			else
-			{
-				R = mid;
-			}
-		}
-
-		temp[L] = nums[i];
-		if (L == maxL)
-		{
-			maxL++;
-		}
-	}
-	cout << maxL << endl;
-}
-
-int main____dsad52(void)
-{
-	int len = 0;
-	while (cin >> len)
-	{
-		vector<int> nums(len, 0);
-		for (int i = 0; i < len; i++)
-		{
-			cin >> nums[i];
-		}
-		findMaxSubstr(nums, len);
-	}
-	return 0;
-}
+//#include <iostream>
+//#include <vector>
+//#include <algorithm>
+//using namespace std;
+//
+//#define INT_MAX 2147483647
+//
+//int main(void)
+//{
+//	int n = 0;
+//	while (cin >> n)
+//	{
+//		vector<int> arr(n, 0);
+//		for (int i = 0; i < n; i++)
+//		{
+//			cin >> arr[i];
+//		}
+//
+//		vector<vector<int>> sum(n, vector<int>(n, 0)); // i到j的和
+//		vector<vector<int>> min_value(n, vector<int>(n, INT_MAX)); // i到j的最小值
+//		for (int i = 0; i < n; i++)
+//		{
+//			for (int j = i; j < n; j++)
+//			{
+//				for (int k = i; k <= j; k++)
+//				{
+//					sum[i][j] += arr[k];
+//					min_value[i][j] = min(min_value[i][j], arr[k]);
+//				}
+//			}
+//		}
+//		
+//		int max_value = 0;
+//		for (int i = 0; i < n; i++)
+//		{
+//			for (int j = 0; j < n; j++)
+//			{
+//				max_value = max(max_value, min_value[i][j] * sum[i][j]);
+//			}
+//		}
+//		cout << max_value << endl;
+//	}
+//
+//	return 0;
+//}

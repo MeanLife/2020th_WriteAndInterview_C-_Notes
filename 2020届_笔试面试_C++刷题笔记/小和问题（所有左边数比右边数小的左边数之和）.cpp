@@ -29,7 +29,7 @@ using namespace std;
 
 static int merge(vector<int> &array, int L, int mid, int R)
 {
-	int *help = new int[R - L + 1];
+	vector<int> help(R - L + 1);
 	int p1 = L;
 	int p2 = mid + 1;
 	int i = 0;
@@ -53,8 +53,6 @@ static int merge(vector<int> &array, int L, int mid, int R)
 		array[L + j] = help[j];
 	}
 
-	delete[]help;
-	help = nullptr;
 	cout << "ret : " << ret << endl;
 	cout << endl;
 	return ret;

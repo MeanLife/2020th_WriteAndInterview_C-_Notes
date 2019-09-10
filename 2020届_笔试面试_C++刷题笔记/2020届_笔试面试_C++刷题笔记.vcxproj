@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -162,6 +162,7 @@
     <ClCompile Include="deque.cpp" />
     <ClCompile Include="forward_list.cpp" />
     <ClCompile Include="list.cpp" />
+    <ClCompile Include="LIS_最长上升子序列.cpp" />
     <ClCompile Include="map.cpp" />
     <ClCompile Include="N个数，判断是否有重复的值.cpp" />
     <ClCompile Include="set.cpp" />
@@ -169,6 +170,7 @@
     <ClCompile Include="string.cpp" />
     <ClCompile Include="不同进制的输入与输出方法（与十进制之间的转换）.cpp" />
     <ClCompile Include="二分查找算法.cpp" />
+    <ClCompile Include="以数组创建一个单链表.cpp" />
     <ClCompile Include="任务列表.cpp" />
     <ClCompile Include="偶串（子串的偶串个数）.cpp" />
     <ClCompile Include="大端、小端判断.cpp" />
@@ -196,7 +198,7 @@
     <ClCompile Include="冒泡法排序.cpp" />
     <ClCompile Include="判断一个链表是否为回文结构.cpp" />
     <ClCompile Include="单向和双向链表反转.cpp" />
-    <ClCompile Include="在二叉树中找到一个节点的后继节点.cpp" />
+    <ClCompile Include="二叉树中找前继和后继节点.cpp" />
     <ClCompile Include="基数排序.cpp" />
     <ClCompile Include="堆排序_大根堆_下标从0开始.cpp" />
     <ClCompile Include="堆排序_大根堆_下标从1开始.cpp" />
@@ -214,13 +216,27 @@
     <ClCompile Include="任务调度问题（拼多多一道题）.cpp" />
     <ClCompile Include="排列组合问题.cpp" />
     <ClCompile Include="插入法排序.cpp" />
-    <ClCompile Include="数组创建一颗完全二叉树.cpp" />
+    <ClCompile Include="源10.cpp" />
+    <ClCompile Include="main__爱奇艺第二题.cpp" />
+    <ClCompile Include="main__爱奇艺第一题.cpp" />
+    <ClCompile Include="源11.cpp" />
+    <ClCompile Include="源12.cpp" />
+    <ClCompile Include="源13.cpp" />
+    <ClCompile Include="源16.cpp" />
+    <ClCompile Include="网易互娱__第一题.cpp" />
+    <ClCompile Include="网易互娱__第二题.cpp" />
+    <ClCompile Include="网易互娱__第三题.cpp" />
+    <ClCompile Include="源14.cpp" />
+    <ClCompile Include="源15.cpp" />
+    <ClCompile Include="源9.cpp" />
+    <ClCompile Include="面试题3__数组中重复的数字.cpp" />
     <ClCompile Include="数组排序后，相邻两数的最大差值.cpp" />
     <ClCompile Include="整数取偶数位上的数.cpp" />
     <ClCompile Include="斐波那契数列.cpp" />
     <ClCompile Include="旋转数组的最小数字.cpp" />
-    <ClCompile Include="替换空格（字符串查找和替换）.cpp" />
-    <ClCompile Include="二维数组中的查找（有序的二维数组）.cpp" />
+    <ClCompile Include="面试题5__替换空格（字符串查找和替换）.cpp" />
+    <ClCompile Include="面试题4__二维数组中的查找（有序的二维数组）.cpp" />
+    <ClCompile Include="LCS_最长公共子序列.cpp" />
     <ClCompile Include="栈_实现_队列.cpp" />
     <ClCompile Include="栈（固定大小数组实现）.cpp" />
     <ClCompile Include="桶排序（计数排序）.cpp" />
@@ -238,16 +254,19 @@
     <ClCompile Include="1.strlen：计算字符串长度.cpp" />
     <ClCompile Include="LeetCode520_检测大写字母.cpp" />
     <ClCompile Include="Base64加密.cpp" />
+    <ClCompile Include="学习机（并查集）.cpp" />
     <ClCompile Include="源1.cpp" />
     <ClCompile Include="源2-1.cpp" />
     <ClCompile Include="源2-2.cpp" />
     <ClCompile Include="2.strcmp：比较字符串大小.cpp" />
+    <ClCompile Include="最长子序列（特殊）.cpp" />
     <ClCompile Include="源2.cpp" />
     <ClCompile Include="源3-1.cpp" />
     <ClCompile Include="源3-2.cpp" />
     <ClCompile Include="源3.cpp" />
     <ClCompile Include="源4.cpp" />
     <ClCompile Include="源5.cpp" />
+    <ClCompile Include="源8.cpp" />
     <ClCompile Include="用两个栈实现队列.cpp" />
     <ClCompile Include="笔试题__Zoom.cpp" />
     <ClCompile Include="报文转义__第一题.cpp" />

@@ -12,7 +12,8 @@ using namespace std;
 判断数组中是否含有该整数。
 
 【思路】：
-因为是有序的，那么按递增或递减方向遍历即可（以四个角随便哪个位置开始都可以）
+1、两重循环遍历。
+2、因为是有序的，那么按递增或递减方向遍历即可（以四个角随便哪个位置开始都可以）
 */
 
 static void printArray(vector<vector<int>> array)
@@ -29,7 +30,7 @@ static void printArray(vector<vector<int>> array)
 
 /***************************************
 【思路】：
-因为是有序的，那么按递增或递减方向遍历即可（以四个角随便哪个位置开始都可以）
+2、因为是有序的，那么按递增或递减方向遍历即可（只能是左下角或者右上角）
 ***************************************/
 static bool function(vector<vector<int>> array, const int key)
 {
@@ -38,7 +39,7 @@ static bool function(vector<vector<int>> array, const int key)
 	int colum = array[0].size() - 1;
 	while (row <= array.size() - 1 && colum >= 0)
 	{
-		temp = array[row][colum];
+		temp = array[row][colum]; // 选的右上角。
 		if (temp > key)
 		{
 			colum--;
@@ -56,7 +57,7 @@ static bool function(vector<vector<int>> array, const int key)
 	return false;
 }
 
-int main_01(void)
+int main_面试题4(void)
 {
 	vector<vector<int>> Input(4);
 	Input[0].push_back(1);

@@ -1,18 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="链表">
-      <UniqueIdentifier>{416dc6f9-9c57-4e15-9647-f76f40027e10}</UniqueIdentifier>
-    </Filter>
     <Filter Include="栈和队列">
       <UniqueIdentifier>{e9a4264c-bfab-490b-ad68-e14f0ff7fa82}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="常用排序算法">
-      <UniqueIdentifier>{9ea6978a-0c43-4a8d-957f-e18ad12eafe7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="常用排序算法\头文件">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
     <Filter Include="树">
       <UniqueIdentifier>{b3f2b9e0-29a5-4bc9-ab08-ba6916cb8964}</UniqueIdentifier>
@@ -44,9 +34,6 @@
     <Filter Include="笔试题__华为机试">
       <UniqueIdentifier>{bdebad9b-fa0e-4a5e-910f-961043f9b49f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="剑指Offer__牛客网在线编程">
-      <UniqueIdentifier>{8c6c0143-934c-435c-9d7e-d701bbdd9a99}</UniqueIdentifier>
-    </Filter>
     <Filter Include="笔试题__京东">
       <UniqueIdentifier>{ad12973c-e922-4dc3-b165-74d5602c7f58}</UniqueIdentifier>
     </Filter>
@@ -63,8 +50,39 @@
     <Filter Include="其他__算法题目">
       <UniqueIdentifier>{37b32167-6084-4841-8eb5-197c7419db37}</UniqueIdentifier>
     </Filter>
-    <Filter Include="C语言_字符串_常用函数实现">
+    <Filter Include="笔试题__顺丰科技">
+      <UniqueIdentifier>{d30e7064-70b5-4ba1-aa45-1d3d6f0ec195}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="笔试题__腾讯">
+      <UniqueIdentifier>{c15ce32d-0759-410d-acc4-2b54b6a652a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="面试题__剑指Offer">
+      <UniqueIdentifier>{8c6c0143-934c-435c-9d7e-d701bbdd9a99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="面试题__C语言_字符串_常用函数实现">
       <UniqueIdentifier>{845d57b6-fdd0-4fb2-bd48-84ab2860158b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="面试题__常用排序算法">
+      <UniqueIdentifier>{9ea6978a-0c43-4a8d-957f-e18ad12eafe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="面试题__常用排序算法\头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="笔试题__小米">
+      <UniqueIdentifier>{e6f892e6-4851-437b-ba67-6a363b044055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="笔试题__网易互娱">
+      <UniqueIdentifier>{54222884-3e07-46eb-aabd-1ca015f7f9e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="面试题__链表">
+      <UniqueIdentifier>{416dc6f9-9c57-4e15-9647-f76f40027e10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="笔试题__爱奇艺">
+      <UniqueIdentifier>{e15b923a-6689-4538-b69a-c914e88e73db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="笔试题__BIGO">
+      <UniqueIdentifier>{12cbde50-f318-4530-8ed9-3bb0b99ff51d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -90,61 +108,61 @@
       <Filter>栈和队列</Filter>
     </ClCompile>
     <ClCompile Include="打印两个有序链表的公共部分.cpp">
-      <Filter>链表</Filter>
+      <Filter>面试题__链表</Filter>
     </ClCompile>
     <ClCompile Include="单向和双向链表反转.cpp">
-      <Filter>链表</Filter>
+      <Filter>面试题__链表</Filter>
     </ClCompile>
     <ClCompile Include="复制含有随机指针节点的链表.cpp">
-      <Filter>链表</Filter>
+      <Filter>面试题__链表</Filter>
     </ClCompile>
     <ClCompile Include="将单链表按某值划分成左边小，中间相等，右边大的形式.cpp">
-      <Filter>链表</Filter>
+      <Filter>面试题__链表</Filter>
     </ClCompile>
     <ClCompile Include="判断一个链表是否为回文结构.cpp">
-      <Filter>链表</Filter>
+      <Filter>面试题__链表</Filter>
     </ClCompile>
     <ClCompile Include="插入法排序.cpp">
-      <Filter>常用排序算法</Filter>
+      <Filter>面试题__常用排序算法</Filter>
     </ClCompile>
     <ClCompile Include="常用排序算法复习测试.cpp">
-      <Filter>常用排序算法</Filter>
+      <Filter>面试题__常用排序算法</Filter>
     </ClCompile>
     <ClCompile Include="堆排序_大根堆_下标从0开始.cpp">
-      <Filter>常用排序算法</Filter>
+      <Filter>面试题__常用排序算法</Filter>
     </ClCompile>
     <ClCompile Include="堆排序_大根堆_下标从1开始.cpp">
-      <Filter>常用排序算法</Filter>
+      <Filter>面试题__常用排序算法</Filter>
     </ClCompile>
     <ClCompile Include="堆排序_小根堆_下标从0开始.cpp">
-      <Filter>常用排序算法</Filter>
+      <Filter>面试题__常用排序算法</Filter>
     </ClCompile>
     <ClCompile Include="归并算法排序.cpp">
-      <Filter>常用排序算法</Filter>
+      <Filter>面试题__常用排序算法</Filter>
     </ClCompile>
     <ClCompile Include="基数排序.cpp">
-      <Filter>常用排序算法</Filter>
+      <Filter>面试题__常用排序算法</Filter>
     </ClCompile>
     <ClCompile Include="快速排序算法.cpp">
-      <Filter>常用排序算法</Filter>
+      <Filter>面试题__常用排序算法</Filter>
     </ClCompile>
     <ClCompile Include="冒泡法排序.cpp">
-      <Filter>常用排序算法</Filter>
+      <Filter>面试题__常用排序算法</Filter>
     </ClCompile>
     <ClCompile Include="数组排序后，相邻两数的最大差值.cpp">
-      <Filter>常用排序算法</Filter>
+      <Filter>面试题__常用排序算法</Filter>
     </ClCompile>
     <ClCompile Include="桶排序（计数排序）.cpp">
-      <Filter>常用排序算法</Filter>
+      <Filter>面试题__常用排序算法</Filter>
     </ClCompile>
     <ClCompile Include="希尔排序算法.cpp">
-      <Filter>常用排序算法</Filter>
+      <Filter>面试题__常用排序算法</Filter>
     </ClCompile>
     <ClCompile Include="选择法排序.cpp">
-      <Filter>常用排序算法</Filter>
+      <Filter>面试题__常用排序算法</Filter>
     </ClCompile>
     <ClCompile Include="主函数_排序算法调用.cpp">
-      <Filter>常用排序算法</Filter>
+      <Filter>面试题__常用排序算法</Filter>
     </ClCompile>
     <ClCompile Include="二叉树的遍历.cpp">
       <Filter>树</Filter>
@@ -183,10 +201,10 @@
       <Filter>STL</Filter>
     </ClCompile>
     <ClCompile Include="两个单链表相交的一系列问题.cpp">
-      <Filter>链表</Filter>
+      <Filter>面试题__链表</Filter>
     </ClCompile>
     <ClCompile Include="链表的成对反转.cpp">
-      <Filter>链表</Filter>
+      <Filter>面试题__链表</Filter>
     </ClCompile>
     <ClCompile Include="两个超长的整数字符串相加.cpp">
       <Filter>笔试题__趋势科技</Filter>
@@ -196,9 +214,6 @@
     </ClCompile>
     <ClCompile Include="任务调度问题（拼多多一道题）.cpp">
       <Filter>笔试题__拼多多</Filter>
-    </ClCompile>
-    <ClCompile Include="在二叉树中找到一个节点的后继节点.cpp">
-      <Filter>树</Filter>
     </ClCompile>
     <ClCompile Include="字符串去重（两两、三三重复）.cpp">
       <Filter>笔试题__字节跳动</Filter>
@@ -266,35 +281,20 @@
     <ClCompile Include="删除字符串中出现次数最少的字符.cpp">
       <Filter>笔试题__华为机试</Filter>
     </ClCompile>
-    <ClCompile Include="数组创建一颗完全二叉树.cpp">
-      <Filter>树</Filter>
-    </ClCompile>
     <ClCompile Include="排序（只能是0位置与某个位置交换）.cpp">
       <Filter>笔试题__华为机试</Filter>
     </ClCompile>
     <ClCompile Include="从尾到头打印链表（链表反转）.cpp">
-      <Filter>剑指Offer__牛客网在线编程</Filter>
-    </ClCompile>
-    <ClCompile Include="二维数组中的查找（有序的二维数组）.cpp">
-      <Filter>剑指Offer__牛客网在线编程</Filter>
-    </ClCompile>
-    <ClCompile Include="替换空格（字符串查找和替换）.cpp">
-      <Filter>剑指Offer__牛客网在线编程</Filter>
-    </ClCompile>
-    <ClCompile Include="重建二叉树（前序+中序的值）.cpp">
-      <Filter>剑指Offer__牛客网在线编程</Filter>
-    </ClCompile>
-    <ClCompile Include="重建二叉树（序列化与反序列化）.cpp">
-      <Filter>剑指Offer__牛客网在线编程</Filter>
+      <Filter>面试题__剑指Offer</Filter>
     </ClCompile>
     <ClCompile Include="用两个栈实现队列.cpp">
-      <Filter>剑指Offer__牛客网在线编程</Filter>
+      <Filter>面试题__剑指Offer</Filter>
     </ClCompile>
     <ClCompile Include="旋转数组的最小数字.cpp">
-      <Filter>剑指Offer__牛客网在线编程</Filter>
+      <Filter>面试题__剑指Offer</Filter>
     </ClCompile>
     <ClCompile Include="斐波那契数列.cpp">
-      <Filter>剑指Offer__牛客网在线编程</Filter>
+      <Filter>面试题__剑指Offer</Filter>
     </ClCompile>
     <ClCompile Include="源1-1.cpp">
       <Filter>笔试题__京东</Filter>
@@ -345,13 +345,13 @@
       <Filter>其他__算法题目</Filter>
     </ClCompile>
     <ClCompile Include="1.strlen：计算字符串长度.cpp">
-      <Filter>C语言_字符串_常用函数实现</Filter>
+      <Filter>面试题__C语言_字符串_常用函数实现</Filter>
     </ClCompile>
     <ClCompile Include="2.strcmp：比较字符串大小.cpp">
-      <Filter>C语言_字符串_常用函数实现</Filter>
+      <Filter>面试题__C语言_字符串_常用函数实现</Filter>
     </ClCompile>
     <ClCompile Include="3.strcpy：用于字符串复制（复制包含0）.cpp">
-      <Filter>C语言_字符串_常用函数实现</Filter>
+      <Filter>面试题__C语言_字符串_常用函数实现</Filter>
     </ClCompile>
     <ClCompile Include="字符串匹配的KMP算法.cpp">
       <Filter>字符串和数组</Filter>
@@ -378,43 +378,22 @@
       <Filter>字符串和数组</Filter>
     </ClCompile>
     <ClCompile Include="4.strstr：寻找母串中是否存在某个子串.cpp">
-      <Filter>C语言_字符串_常用函数实现</Filter>
-    </ClCompile>
-    <ClCompile Include="源2.cpp">
-      <Filter>源</Filter>
-    </ClCompile>
-    <ClCompile Include="源3.cpp">
-      <Filter>源</Filter>
-    </ClCompile>
-    <ClCompile Include="源4.cpp">
-      <Filter>源</Filter>
-    </ClCompile>
-    <ClCompile Include="源6.cpp">
-      <Filter>源</Filter>
-    </ClCompile>
-    <ClCompile Include="源7.cpp">
-      <Filter>源</Filter>
-    </ClCompile>
-    <ClCompile Include="源5.cpp">
-      <Filter>源</Filter>
+      <Filter>面试题__C语言_字符串_常用函数实现</Filter>
     </ClCompile>
     <ClCompile Include="Base64加密.cpp">
       <Filter>笔试题__汇顶科技</Filter>
     </ClCompile>
-    <ClCompile Include="源1.cpp">
-      <Filter>源</Filter>
-    </ClCompile>
     <ClCompile Include="5.itoa：整数转字符串.cpp">
-      <Filter>C语言_字符串_常用函数实现</Filter>
+      <Filter>面试题__C语言_字符串_常用函数实现</Filter>
     </ClCompile>
     <ClCompile Include="6.atoi：字符串转整数（遇到非数字字符结束）.cpp">
-      <Filter>C语言_字符串_常用函数实现</Filter>
+      <Filter>面试题__C语言_字符串_常用函数实现</Filter>
     </ClCompile>
     <ClCompile Include="7.memcpy：拷贝某段内存.cpp">
-      <Filter>C语言_字符串_常用函数实现</Filter>
+      <Filter>面试题__C语言_字符串_常用函数实现</Filter>
     </ClCompile>
     <ClCompile Include="8.memset：对指定内存每个字节赋某个值.cpp">
-      <Filter>C语言_字符串_常用函数实现</Filter>
+      <Filter>面试题__C语言_字符串_常用函数实现</Filter>
     </ClCompile>
     <ClCompile Include="0-1背包问题（经典）.cpp">
       <Filter>其他__算法题目</Filter>
@@ -438,30 +417,126 @@
       <Filter>笔试题__中兴</Filter>
     </ClCompile>
     <ClCompile Include="9.strcat：字符串连接.cpp">
-      <Filter>源</Filter>
+      <Filter>面试题__C语言_字符串_常用函数实现</Filter>
     </ClCompile>
     <ClCompile Include="10.strchr：字符串中找首次出现某个字符的字符串.cpp">
+      <Filter>面试题__C语言_字符串_常用函数实现</Filter>
+    </ClCompile>
+    <ClCompile Include="学习机（并查集）.cpp">
+      <Filter>笔试题__顺丰科技</Filter>
+    </ClCompile>
+    <ClCompile Include="最长子序列（特殊）.cpp">
+      <Filter>笔试题__顺丰科技</Filter>
+    </ClCompile>
+    <ClCompile Include="源3.cpp">
+      <Filter>笔试题__拼多多</Filter>
+    </ClCompile>
+    <ClCompile Include="源4.cpp">
+      <Filter>笔试题__拼多多</Filter>
+    </ClCompile>
+    <ClCompile Include="源5.cpp">
+      <Filter>笔试题__拼多多</Filter>
+    </ClCompile>
+    <ClCompile Include="源1.cpp">
+      <Filter>笔试题__腾讯</Filter>
+    </ClCompile>
+    <ClCompile Include="源2.cpp">
+      <Filter>笔试题__腾讯</Filter>
+    </ClCompile>
+    <ClCompile Include="源6.cpp">
+      <Filter>笔试题__腾讯</Filter>
+    </ClCompile>
+    <ClCompile Include="源7.cpp">
+      <Filter>笔试题__腾讯</Filter>
+    </ClCompile>
+    <ClCompile Include="面试题3__数组中重复的数字.cpp">
+      <Filter>面试题__剑指Offer</Filter>
+    </ClCompile>
+    <ClCompile Include="面试题4__二维数组中的查找（有序的二维数组）.cpp">
+      <Filter>面试题__剑指Offer</Filter>
+    </ClCompile>
+    <ClCompile Include="面试题5__替换空格（字符串查找和替换）.cpp">
+      <Filter>面试题__剑指Offer</Filter>
+    </ClCompile>
+    <ClCompile Include="重建二叉树（前序+中序的值）.cpp">
+      <Filter>树</Filter>
+    </ClCompile>
+    <ClCompile Include="重建二叉树（序列化与反序列化）.cpp">
+      <Filter>树</Filter>
+    </ClCompile>
+    <ClCompile Include="二叉树中找前继和后继节点.cpp">
+      <Filter>树</Filter>
+    </ClCompile>
+    <ClCompile Include="LCS_最长公共子序列.cpp">
+      <Filter>其他__算法题目</Filter>
+    </ClCompile>
+    <ClCompile Include="LIS_最长上升子序列.cpp">
+      <Filter>其他__算法题目</Filter>
+    </ClCompile>
+    <ClCompile Include="以数组创建一个单链表.cpp">
+      <Filter>面试题__链表</Filter>
+    </ClCompile>
+    <ClCompile Include="源8.cpp">
+      <Filter>笔试题__小米</Filter>
+    </ClCompile>
+    <ClCompile Include="源9.cpp">
+      <Filter>笔试题__小米</Filter>
+    </ClCompile>
+    <ClCompile Include="源10.cpp">
+      <Filter>笔试题__小米</Filter>
+    </ClCompile>
+    <ClCompile Include="源14.cpp">
+      <Filter>源</Filter>
+    </ClCompile>
+    <ClCompile Include="源15.cpp">
+      <Filter>源</Filter>
+    </ClCompile>
+    <ClCompile Include="网易互娱__第一题.cpp">
+      <Filter>笔试题__网易互娱</Filter>
+    </ClCompile>
+    <ClCompile Include="网易互娱__第二题.cpp">
+      <Filter>笔试题__网易互娱</Filter>
+    </ClCompile>
+    <ClCompile Include="网易互娱__第三题.cpp">
+      <Filter>笔试题__网易互娱</Filter>
+    </ClCompile>
+    <ClCompile Include="main__爱奇艺第二题.cpp">
+      <Filter>笔试题__爱奇艺</Filter>
+    </ClCompile>
+    <ClCompile Include="main__爱奇艺第一题.cpp">
+      <Filter>笔试题__爱奇艺</Filter>
+    </ClCompile>
+    <ClCompile Include="源12.cpp">
+      <Filter>源</Filter>
+    </ClCompile>
+    <ClCompile Include="源13.cpp">
+      <Filter>源</Filter>
+    </ClCompile>
+    <ClCompile Include="源11.cpp">
+      <Filter>笔试题__BIGO</Filter>
+    </ClCompile>
+    <ClCompile Include="源16.cpp">
       <Filter>源</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="插入法排序.h">
-      <Filter>常用排序算法\头文件</Filter>
+      <Filter>面试题__常用排序算法\头文件</Filter>
     </ClInclude>
     <ClInclude Include="归并算法排序.h">
-      <Filter>常用排序算法\头文件</Filter>
+      <Filter>面试题__常用排序算法\头文件</Filter>
     </ClInclude>
     <ClInclude Include="快速排序算法.h">
-      <Filter>常用排序算法\头文件</Filter>
+      <Filter>面试题__常用排序算法\头文件</Filter>
     </ClInclude>
     <ClInclude Include="冒泡法排序.h">
-      <Filter>常用排序算法\头文件</Filter>
+      <Filter>面试题__常用排序算法\头文件</Filter>
     </ClInclude>
     <ClInclude Include="希尔排序算法.h">
-      <Filter>常用排序算法\头文件</Filter>
+      <Filter>面试题__常用排序算法\头文件</Filter>
     </ClInclude>
     <ClInclude Include="选择法排序.h">
-      <Filter>常用排序算法\头文件</Filter>
+      <Filter>面试题__常用排序算法\头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
